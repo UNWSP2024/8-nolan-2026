@@ -71,10 +71,9 @@ def capital_quiz():
     correct = 0
     incorrect = 0
 
-    # Convert dictionary keys to a list for random selection
     states = list(states_and_capitals.keys())
 
-    # Ask 5 random questions
+    # Ask 10 random questions
     for _ in range(10):
         state = random.choice(states)
         answer = input(f"What is the capital of {state}? ")
